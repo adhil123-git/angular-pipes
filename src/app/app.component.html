@@ -3,8 +3,11 @@
 <h1>currency pipe</h1>
 <p>the amount is {{amount | currency}}</p>
 <p>the amount is {{amount | currency:'INR'}}</p>
-<p>the amount is {{amount | currency:'EUR':'symbol-narrow':'4.3-3' }}</p>
-
+<p>the amount is {{amount | currency:'EUR' }}</p>
+<p>the amount is {{amount | currency:'CAD'}}</p>
+<p>the amount is {{amount | currency:'CAD':'code'}}</p>
+<p>the amount is {{amount | currency:'CAD':'symbol-narrow'}}</p>
+<p>the amount is {{amount | currency:'CAD':'symbol'}}</p>
 
 <h1>date pipe</h1>
 <p> today date is {{date | date}}</p>
@@ -24,6 +27,6 @@
 
 
 <h1>custom pipes</h1>
-<p> I used the custom pipes to print the values based on the length</p>
-<p>{{value | custom }}</p>
+<p> distance from my home to office {{value}} kilometer</p>
+<p>distance from my home to office in meters {{value | custom }} meter</p>
 

@@ -5,8 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class CustomPipe implements PipeTransform {
 
-  transform(value: string): string {
-    return value.toUpperCase();
+  transform(value: number): number{
+    return (value*1000);
     
   }
 

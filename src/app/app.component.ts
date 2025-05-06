@@ -27,5 +27,5 @@ export class AppComponent {
   ];
   percentage: number = 0.1236565;
 
-  value: string= 'im  a hindusthan student';
+  value: number= 3;
 }
